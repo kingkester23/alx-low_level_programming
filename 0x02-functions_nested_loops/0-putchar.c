@@ -1,7 +1,7 @@
-#include *main.h*
+#include "main.h"
 /**
- * main - Entry point
- * Description: 'prints _putchar to stdout'
+ * main - print_putchar
+ * is written by mbah
  * Return: always 0
  */
 int main(void)
