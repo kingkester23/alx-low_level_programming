@@ -57,33 +57,30 @@ void print_all(const char * const format, ...)
 
                                         str = va_arg(list, char *);
 
-                                        if (!str)
+if (!str)
+						
+str = "(nil)";
 
-                                                str = "(nil)";
+printf("%s%s", sep, str);
 
-                                        printf("%s%s", sep, str);
+break;
 
-                                        break;
+default:
 
-                                default:
+i++;
 
-                                        i++;
+continue;
 
-                                        continue;
+}
+sep = ", ";
 
-                        }
+i++;
 
-                        sep = ", ";
+}
 
-                        i++;
+}
 
-                }
+printf("\n");
 
-        }
-
-
-        printf("\n");
-
-        va_end(list);
-
+va_end(list);
 }
