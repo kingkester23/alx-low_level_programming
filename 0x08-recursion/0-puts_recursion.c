@@ -10,7 +10,8 @@ void _puts_recursion(char *s)
 
 {
 
-if (*s)
+
+	if (*s)
 
 {
 
