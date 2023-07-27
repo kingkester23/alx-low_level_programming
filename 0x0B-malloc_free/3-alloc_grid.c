@@ -31,40 +31,40 @@ return (NULL);
 
 for (x = 0; x < height; x++)
 
-        {
+{
 
-                mee[x] = malloc(sizeof(int) * width);
-
-
-                if (mee[x] == NULL)
-
-                {
-
-                        for (; x >= 0; x--)
-
-                                free(mee[x]);
+mee[x] = malloc(sizeof(int) * width);
 
 
-                        free(mee);
+if (mee[x] == NULL)
 
-                        return (NULL);
+{
 
-                }
+for (; x >= 0; x--)
 
-        }
-
-
-        for (x = 0; x < height; x++)
-
-        {
-
-                for (y = 0; y < width; y++)
-
-                        mee[x][y] = 0;
-
-        }
+free(mee[x]);
 
 
-        return (mee);
+free(mee);
+
+return (NULL);
+
+}
+
+}
+
+
+for (x = 0; x < height; x++)
+
+{
+
+for (y = 0; y < width; y++)
+
+mee[x][y] = 0;
+
+}
+
+
+return (mee);
 
 }
